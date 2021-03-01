@@ -36,10 +36,13 @@ Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, aña
   $ touch [nombre del archivo]
 ```
 
-"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.
-
+"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. 
 ```bash
   $ rm [nombre del archivo]
+```
+"Remove Directory" Elimina un directorio pero solo si esta vacío.
+```bash
+  $ rmdir [nombre del directorio]
 ```
 
 ## Ejercicio
@@ -49,13 +52,11 @@ En este ejercicio crearemos un nuevo repositorio en Github y a partir de la line
 Iniciaremos creando una carpeta desde la consola llamada: "Henry"
 
 Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
-
 ```bash
   cd ~
 ```
 
 y presiona Enter. Una vez estés en el nivel superior, escribe:
-
 ```bash
   mkdir Henry
 ```
@@ -83,7 +84,6 @@ Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones d
 Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede al repositorio que creaste en tu cuenta, y haz click en el botón de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. O, si el repo esta vacio vas a ver en el medio de la pantalla la URL con la dirección de tu repositorio.
 
 Una vez tengas la dirección copiada, vuelve a tu terminal y escribe lo siguiente:
-
 
 ```bash
   $ cd Henry
