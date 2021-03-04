@@ -67,7 +67,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return length(str1) === length(str2);
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -138,6 +138,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  // Tu código:
   return Math.random()
 }
 
@@ -147,13 +148,17 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (numero > 0) 
-  return "Es positivo";
-    else if ( numero < 0) 
-      "Es negativo";
-    else
+  // Tu código:
+  if (numero > 0){
+    return "Es positivo";
+  }else{
+    if (numero === 0){
       return false;
+    }else{
+      return "Es negativo";
     }
+  }
+}
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -173,7 +178,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("hola "+ nombre);
+  return ("Hola " + nombre + "!");
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -207,11 +212,11 @@ function deEuroAdolar(euro){
 
 
 function esVocal(letra){
-  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
+  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje "Es vocal". 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Tu código:
-  if (length(letra) === 1)
+  if (letra.length === 1)
     if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
       return "Es vocal";
     else
