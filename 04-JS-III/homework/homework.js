@@ -107,7 +107,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  numero = 0;
+  numero = numeros[0];
   for (let i = 0; i < numeros.length; i++){
     if (numeros[i] > numero){
       numero = numeros[i];
