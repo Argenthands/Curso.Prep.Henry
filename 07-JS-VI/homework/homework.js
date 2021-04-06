@@ -52,9 +52,8 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  array2 = [];
-  array.forEach((element) => {if (element.charAt(0) === "a"){array2.push(element)}});
-  return array2;
+  filterArray = array.filter(element => element.charAt(0) === 'a');
+  return filterArray;
 }
 
 // No modificar nada debajo de esta línea
