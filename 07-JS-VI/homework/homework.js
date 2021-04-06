@@ -44,9 +44,6 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   return result = array.map(element => cb(element));
-  array2 = [];
-  array.forEach((element,index) => array2[index] = cb(element));
-  return array2;  
 }
 
 function filter(array) {
